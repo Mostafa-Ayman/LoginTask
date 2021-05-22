@@ -101,21 +101,7 @@ extension UIViewController{
     }
 }
 
-enum UserKeys {
-        static let userName = "userName"
-        static let userEmail = "userEmail"
-        static let userPass = "userPass"
-        static let userPhone = "userPhone"
-}
 
-extension UserDefaults {
-
-    static func isExists(key: String) -> Bool {
-        return UserDefaults.standard.object(forKey: key) != nil
-    }
-    
-
-}
 
 
 

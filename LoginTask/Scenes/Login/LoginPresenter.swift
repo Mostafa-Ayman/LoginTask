@@ -4,9 +4,12 @@
 //
 //  Created by Mostafa Ayman on 21/05/2021.
 //
+import RealmSwift
 
 
-class LoginPresenter: BasePresenter {
+class LoginPresenter: BasePresenter , EmailExistProtocol{
+    
+    //MARK: - PROPERTIES.
     private var view : BaseViewProtocol?
     
     override func attachView(view : BaseViewProtocol) {
@@ -17,7 +20,5 @@ class LoginPresenter: BasePresenter {
     override func viewDidAttach() {
         
     }
-    
 
-  
 }

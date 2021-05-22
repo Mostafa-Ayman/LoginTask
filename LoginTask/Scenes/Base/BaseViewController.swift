@@ -7,8 +7,6 @@
 
 
 protocol BaseViewProtocol: class {
-    func showLoader()
-    func hideLoader()
     func showAlertWith(title: String?, text: String)
     func displayConnectionError()
     func reloadView()

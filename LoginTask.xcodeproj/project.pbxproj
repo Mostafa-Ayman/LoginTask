@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		191048F02659253400D1FC23 /* CommonUsed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191048EF2659253400D1FC23 /* CommonUsed.swift */; };
 		19437EB42657E700003F6E8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19437EB32657E700003F6E8C /* AppDelegate.swift */; };
 		19437EB62657E700003F6E8C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19437EB52657E700003F6E8C /* SceneDelegate.swift */; };
 		19437EB82657E700003F6E8C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19437EB72657E700003F6E8C /* ViewController.swift */; };
@@ -22,7 +23,6 @@
 		19437EE42657FB06003F6E8C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19437EE32657FB06003F6E8C /* Extensions.swift */; };
 		19437EF626580FD4003F6E8C /* AppButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19437EF526580FD4003F6E8C /* AppButton.swift */; };
 		19437F1D26582DC2003F6E8C /* ValidationTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19437F1C26582DC2003F6E8C /* ValidationTextField.swift */; };
-		19437F21265835A5003F6E8C /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19437F20265835A5003F6E8C /* AppManager.swift */; };
 		199F4F61265869010068F343 /* UserDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199F4F60265869010068F343 /* UserDataModel.swift */; };
 		199F4F6926586B050068F343 /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199F4F6826586B050068F343 /* SignUpPresenter.swift */; };
 		199F4F6D26586B240068F343 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199F4F6B26586B240068F343 /* SignUpVC.swift */; };
@@ -32,6 +32,7 @@
 
 /* Begin PBXFileReference section */
 		0BF9AFD7109C82C4D3A6610E /* Pods-LoginTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginTask.release.xcconfig"; path = "Target Support Files/Pods-LoginTask/Pods-LoginTask.release.xcconfig"; sourceTree = "<group>"; };
+		191048EF2659253400D1FC23 /* CommonUsed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonUsed.swift; sourceTree = "<group>"; };
 		19437EB02657E700003F6E8C /* LoginTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19437EB32657E700003F6E8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19437EB52657E700003F6E8C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,7 +54,6 @@
 		19437EF326580CA1003F6E8C /* Almarai-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Almarai-Bold.ttf"; sourceTree = "<group>"; };
 		19437EF526580FD4003F6E8C /* AppButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppButton.swift; sourceTree = "<group>"; };
 		19437F1C26582DC2003F6E8C /* ValidationTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationTextField.swift; sourceTree = "<group>"; };
-		19437F20265835A5003F6E8C /* AppManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
 		199F4F60265869010068F343 /* UserDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataModel.swift; sourceTree = "<group>"; };
 		199F4F6826586B050068F343 /* SignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenter.swift; sourceTree = "<group>"; };
 		199F4F6B26586B240068F343 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
@@ -166,10 +166,10 @@
 		19437EDE2657FA2C003F6E8C /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				19437F1F26583592003F6E8C /* Manager */,
 				19437EEF26580C6A003F6E8C /* Fonts */,
 				19437EDF2657FA46003F6E8C /* AppTextField.swift */,
 				19437EF526580FD4003F6E8C /* AppButton.swift */,
+				191048EF2659253400D1FC23 /* CommonUsed.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -192,14 +192,6 @@
 				19437EF126580CA1003F6E8C /* Almarai-Regular.ttf */,
 			);
 			path = Fonts;
-			sourceTree = "<group>";
-		};
-		19437F1F26583592003F6E8C /* Manager */ = {
-			isa = PBXGroup;
-			children = (
-				19437F20265835A5003F6E8C /* AppManager.swift */,
-			);
-			path = Manager;
 			sourceTree = "<group>";
 		};
 		199F4F6726586AEA0068F343 /* SignUp */ = {
@@ -348,8 +340,8 @@
 				19437ED32657EC25003F6E8C /* BaseViewController.swift in Sources */,
 				19437EE42657FB06003F6E8C /* Extensions.swift in Sources */,
 				19437EB82657E700003F6E8C /* ViewController.swift in Sources */,
-				19437F21265835A5003F6E8C /* AppManager.swift in Sources */,
 				199F4F6926586B050068F343 /* SignUpPresenter.swift in Sources */,
+				191048F02659253400D1FC23 /* CommonUsed.swift in Sources */,
 				19437EDB2657F082003F6E8C /* LoginVC.swift in Sources */,
 				19437ED02657EC12003F6E8C /* BasePresenter.swift in Sources */,
 				19437ED62657F046003F6E8C /* LoginPresenter.swift in Sources */,

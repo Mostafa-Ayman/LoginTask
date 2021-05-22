@@ -18,16 +18,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
         
-        
-        let navigationController = UINavigationController(rootViewController: LoginVC())
+        let navigationController = UINavigationController(rootViewController: LoginVC(presenter: LoginPresenter()))
         navigationController.navigationBar.isTranslucent = false
-
         navigationController.navigationBar.barTintColor = .systemBackground
         navigationController.navigationBar.backgroundColor = .systemBackground
-        navigationController.editButtonItem.tintColor = .systemBackground
         navigationController.navigationBar.tintColor = .systemGreen
-        UIView().backgroundColor = .systemBackground
-        UILabel().tintColor = .label
         window?.rootViewController =  navigationController
     }
 
